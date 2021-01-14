@@ -15,9 +15,13 @@ if age >= 18:
 elif age >= 14 and age <= 17:
     print("You can play the game but with parental guidance :)")
 
-    access_to_play = input("Do you want to play?").lower()
+    access_to_play = input("Do you want to play? ").lower()
     if access_to_play == "yes":
         print("Okay, let's play")
+
+        left_or_right = input()
+    else:
+        print("Either you didn't type yes or you don't want to play :( . Either way I'll cya next time :)")
 
 else:
     print("You are not old enough to play this game, sorry :(")
