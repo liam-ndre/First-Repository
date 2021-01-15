@@ -19,7 +19,15 @@ elif age >= 14 and age <= 17:
     if access_to_play == "yes":
         print("Okay, let's play")
 
-        left_or_right = input()
+        direction = input("Left or Right? ").lower()
+        if direction == "left":
+            print("Okay let's go left")
+        
+        elif direction == "right":
+            print("Okay let's go right")
+        
+        else:
+            print("Oops, I couldn't lead you. Did you type either 'left' or 'right'?")
     else:
         print("Either you didn't type yes or you don't want to play :( . Either way I'll cya next time :)")
 
