@@ -22,9 +22,12 @@ elif age >= 14 and age <= 17:
         direction = input("Left or Right? ").lower()
         if direction == "left":
             print("Okay let's go left")
+            print("Wow, you found a sword. Would you like to pick it up?")
+
+            equippable_sword = input("Yes or No? ").lower()
         
         elif direction == "right":
-            print("Okay let's go right")
+            print("You die, F")
         
         else:
             print("Oops, I couldn't lead you. Did you type either 'left' or 'right'?")
