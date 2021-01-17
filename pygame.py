@@ -8,9 +8,20 @@ health = 10
 if age >= 18:
     print("You are old enough to play this game!")
 
-    access_to_play = input("Do you want to play?")
-    if access_to_play == "yes" or "Yes":
+    access_to_play = input("Do you want to play? ").lower()
+    if access_to_play == "yes":
         print("Okay, let's play")
+
+        direction = input("Left or Right? ").lower()
+        if direction == "left":
+            print("Okay let's go left")
+            print("Wow, you found a sword. Would you like to pick it up?")
+
+            equippable_sword = input("Yes or No? ").lower()
+        
+        elif direction == "right":
+            print("You die, F")
+        
 
 elif age >= 14 and age <= 17:
     print("You can play the game but with parental guidance :)")
