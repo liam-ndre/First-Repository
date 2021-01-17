@@ -18,7 +18,7 @@ if age >= 18:
 
             equippable_sword = input("Wow, you found a sword. Would you like to pick it up? (Yes/No?) ").lower()
             if equippable_sword == "yes":
-                print("You have now acquired a rust sword!)
+                print("You have now acquired a rust sword!")
 
             elif equippable_sword == "no":
                 print("You have not acquired the rust sword and will not have the opportunity to do so for the rest of the game")
