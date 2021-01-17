@@ -1,5 +1,5 @@
 # First-Repository
 
-# PyGame
+# Python Worded Game
 
 Python Game for my First Project

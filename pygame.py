@@ -15,9 +15,17 @@ if age >= 18:
         direction = input("Left or Right? ").lower()
         if direction == "left":
             print("Okay let's go left")
-            print("Wow, you found a sword. Would you like to pick it up?")
 
-            equippable_sword = input("Yes or No? ").lower()
+            equippable_sword = input("Wow, you found a sword. Would you like to pick it up? (Yes/No?) ").lower()
+            if equippable_sword == "yes":
+                print("You have now acquired a rust sword!)
+
+            elif equippable_sword == "no":
+                print("You have not acquired the rust sword and will not have the opportunity to do so for the rest of the game")
+
+            else:
+                print("The sword sees you as a threat for not complying with the rules and it kills you")
+
         
         elif direction == "right":
             print("You die, F")
