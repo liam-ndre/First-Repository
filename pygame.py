@@ -12,7 +12,7 @@ if age >= 18:
     if access_to_play == "yes":
         print("Okay, let's play")
 
-        direction = input("Left or Right? ").lower()
+        direction = input("You begin walking and encounter a fork in the road. Where do you go? Left or Right? ").lower()
         if direction == "left":
             print("Okay let's go left")
 
