@@ -28,7 +28,24 @@ if age >= 18:
                     health -= 5
                     print("Health = ", health, "HP")
 
+                new_area = input("After crossing the river you notice that there is a house about 100m north-west and a river 200m east. Which new area do you decide to go to? (House/River?)").lower
+                if new_area == "house":
+                    print("You walk towards the wooden log house and see that the door is unlocked. You enter and notice that there is a man inside. He notices your health bar, walks over and decreases your health by")
+                    health -= 5
+                    print("Health = ", health, "HP")
                 
+                elif new_area == "river":
+                    fishing_rod = input("You see a fishing rod, do you wish to pick it up?(Yes/No?) ").lower()
+                    if fishing_rod == "yes":
+                        print("You get a blister")
+                        health -= 5
+                        print("Health = ", health, "HP")
+
+                if health <= 0:
+                    print("You have no more health, you slowly decend to a sweet slumber. :)")
+                    else:
+                        print("You survived and you win :)")
+                        
             elif equippable_sword == "no":
                 print("You have not acquired the rust sword and will not have the opportunity to do so for the rest of the game")
 
