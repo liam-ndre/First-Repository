@@ -3,6 +3,7 @@ name = input("What is your name? ")
 age = int(input("What is your age? "))
 
 print("Hello", name,",", age, "years of age")
+
 health = 10
 
 if age >= 18:
@@ -11,6 +12,7 @@ if age >= 18:
     access_to_play = input("Do you want to play? ").lower()
     if access_to_play == "yes":
         print("Okay, let's play")
+        print("Current Health =" , health, "HP")
 
         direction = input("You begin walking and encounter a fork in the road. Where do you go? Left or Right? ").lower()
         if direction == "left":
@@ -20,6 +22,13 @@ if age >= 18:
             if equippable_sword == "yes":
                 print("You have now acquired a rust sword!")
 
+                lake = input("You progress further and notice that there is a lake with stone path running across the middle. You also notice that you can go around but it will take longer. What path do you choose to take here? (Across/Around?) ").lower()
+                if lake == "across":
+                    print("You have made it across but have been bitten by a carnivorous fish. You have lost 5 health as a result")
+                    health -= 5
+                    print("Health = ", health, "HP")
+
+                
             elif equippable_sword == "no":
                 print("You have not acquired the rust sword and will not have the opportunity to do so for the rest of the game")
 
@@ -29,6 +38,9 @@ if age >= 18:
         
         elif direction == "right":
             print("You die, F")
+        
+        else:
+            print("That was neither left or right. The path is confused and eats you up for not adhering to the rules")
         
 
 elif age >= 14 and age <= 17:
