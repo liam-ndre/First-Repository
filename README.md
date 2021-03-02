@@ -2,4 +2,4 @@
 
 # Python Worded Game
 
-Python Game for my First Project
+A worded game that can be run in your terminal
